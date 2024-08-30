@@ -9,7 +9,7 @@ export default function HomeScreen() {
     <ScrollView style={styles.screenContainer}>
       <View style={styles.totalBalanceContainer}>
         <Text style={styles.totalBalanceTitle}> Total Balance </Text>
-        <Text style={styles.totalBalanceNum}> $1,000,000 thousand</Text>
+        <Text style={styles.totalBalanceNum}> $1,000,000 thousand </Text>
       </View>
       <View style={styles.graphContainer}>
         <Image

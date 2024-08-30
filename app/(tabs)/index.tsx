@@ -18,6 +18,9 @@ export default function HomeScreen() {
         />
       </View>
       <View style={styles.accountSelectionContainer}>
+        <View>
+          <Text style={styles.accountTitle}> Accounts </Text>
+        </View>
         <View style={styles.accountSelection}>
           <Text> 401k </Text>
         </View>
@@ -80,5 +83,9 @@ const styles = StyleSheet.create({
     backgroundColor: "grey",
     borderRadius: 10,
     padding: 5,
+  },
+  accountTitle: {
+    fontSize: 20,
+    paddingBottom: 5,
   },
 });

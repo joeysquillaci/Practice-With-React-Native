@@ -4,6 +4,7 @@ import React from "react";
 import { TabBarIcon } from "@/components/navigation/TabBarIcon";
 import { Colors } from "@/constants/Colors";
 import { useColorScheme } from "@/hooks/useColorScheme";
+import Icon from "react-native-vector-icons/FontAwesome"; // Example with FontAwesome
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -32,9 +33,10 @@ export default function TabLayout() {
         options={{
           title: "Accounts",
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? "code-slash" : "code-slash-outline"}
+            <Icon
+              name={focused ? "line-chart" : "line-chart"}
               color={color}
+              size={30}
             />
           ),
         }}
@@ -44,10 +46,7 @@ export default function TabLayout() {
         options={{
           title: "Add",
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? "code-slash" : "code-slash-outline"}
-              color={color}
-            />
+            <Icon name={focused ? "plus" : "plus"} color={color} size={30} />
           ),
         }}
       />
@@ -56,10 +55,7 @@ export default function TabLayout() {
         options={{
           title: "Profile",
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? "code-slash" : "code-slash-outline"}
-              color={color}
-            />
+            <Icon name={focused ? "male" : "male"} color={color} size={30} />
           ),
         }}
       />
